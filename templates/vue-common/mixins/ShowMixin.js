@@ -36,7 +36,7 @@ export default {
       message && this.showError(message);
     }
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.reset();
   }
 };

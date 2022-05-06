@@ -11,7 +11,7 @@ export default {
   created() {
     this.retrieve(decodeURIComponent(this.$route.params.id));
   },
-  beforeDestroy() {
+  beforeUnmount() {
     this.reset();
   },
   computed: {
